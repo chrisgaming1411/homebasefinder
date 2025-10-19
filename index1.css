@@ -1,0 +1,205 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #e8fcff;
+      color: #222;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+      margin-top: 50px;
+      width: 90%;
+      background: linear-gradient(90deg, #62CFF4, #2C67F2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 50px;
+      padding: 15px 60px;
+      color: white;
+      
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .logo img {
+      width: 32px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: black;
+    }
+
+    /* ===== FILTERS SECTION ===== */
+    .filters {
+      padding: 40px 60px;
+    }
+
+    .filters h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .filter-bar select {
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+      background: white;
+      outline: none;
+      appearance: none;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    .filter-bar button {
+      background: linear-gradient(90deg, #000c69, #001c94);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .filter-bar button:hover {
+      opacity: 0.9;
+    }
+
+    /* ===== BOARDINGHOUSE CARDS ===== */
+    .boardings-section {
+      padding: 20px 60px;
+    }
+
+    .boardings-section h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h4 {
+      font-size: 1rem;
+      color: #007a8f;
+      font-weight: 700;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 4px 0 12px;
+    }
+
+    .view-btn {
+      background: linear-gradient(90deg, #000c69, #00b4d8);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 8px 18px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+      display: flex;
+     
+    }
+
+    .view-btn:hover {
+      opacity: 0.9;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    footer a {
+      color: #007a8f;
+      text-decoration: none;
+      margin-left: 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 25px;
+      }
+      .filters, .boardings-section {
+        padding: 20px 25px;
+      }
+      .filter-bar select {
+        width: 100%;
+      }
+    }
